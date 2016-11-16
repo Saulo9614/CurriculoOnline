@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gerador de Currículo Universitário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estiloweb.css"/>
+    </head>
+    <body>
+
+        <header id="cabecalho">
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Cadastrar</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+
+            </ul>
+
+        </header>
+
+         <div id="banner">
+            <img src="img/logo3.png" id="logo3">
+        </div>
+
+        <article>
+            <form method="post" action="cadastro" id="formulario">
+                <p id="titulo">Currículum Vitae</p>
+
+                <fieldset id="dados">
+                    <legend>Dados Pessoais</legend>
+                    <table id="dadosPessoais">
+                        <tr><td>Nome: </td><td><input type="text" size="30" placeholder="Nome Completo" name="nome"></td></tr>                                                                   
+                        <tr><td>Endereço: </td> <td><input type="text" size="40" placeholder="Rua, Ave, Trav..." name="end"></td></tr>                                              
+                        <tr><td>Nacionalidade: </td><td><input type="text" size="10" placeholder="ex. Brasileiro" name="nacion"></td></tr>
+                        <tr><td>Estado Civil: </td><td><input type="text" size="10" placeholder="ex. Casado" name="estadoCiv"></td></tr>
+                        <tr><td>Cidade: </td><td><input type="text" size="15" placeholder="Juazeiro do Norte" name="cidade"></td></tr>
+                        <tr><td>Estado: </td><td><input type="text" size="15" placeholder="Ceará" name="estado"></td></tr>
+                        <tr><td>Telefone: </td><td><input type="text" size="10" placeholder="88988888888" name="fone"></td></tr>
+                        <tr><td>E-mail: </td><td><input type="email" size="30" placeholder="E-mail" name="email"></td></tr>                   
+                        <tr><td>Objetivo: </td><td><textarea  class="tx" cols="50" rows="4" placeholder="Descrissão do seu objetivo" name="objt"></textarea></td></tr>
+                    </table>
+                </fieldset>
+
+                <fieldset id="formacaoA">
+                    <legend>Formação Acadêmica</legend>
+                    <table id="formacao">
+                        <tr><td>Instituição: </td> <td> <input type="text" size="20" placeholder="FAP" name="instituicao"></td></tr>
+                        <tr><td>Status: </td> <td> <input type="text" size="20" placeholder="Cursando" name="status"></td></tr>
+                        <tr><td>Período: </td> <td> <input type="date"> a <input type="date" name="periodo"></td></tr>
+                        <tr><a href="formacoes.html" id="outrasformacoes" name="formacoes">Adicionar Formações</a></tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiencias Profissionais</legend>
+                    <table>
+                        <tr><td>Função: </td><td><input type="text" size="10" placeholder="ex. Gerente" name="funcao"></td></tr>
+                        <tr><td>Empresa: </td><td><input type="text" size="10" placeholder="ex. Empresa.LMTD" name="empresa"></td></tr>
+                        <tr><td>Período: </td> <td> <input type="date"> a <input type="date" name="periodoEP"></td></tr>
+                        <tr><a href="experiencias.html" id="outrasexp" name="experiencias">Adicionar Experiências</a></tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cursos Extracurriculares</legend>
+                    <table>
+                        <tr><td>Instituição: </td><td><input type="text" size="10" placeholder="ex. Microlins" name="instituicaoEC"></td></tr>
+                        <tr><td>Curso: </td><td><input type="text" size="10" placeholder="ex. Web Design" name="cursoEC"></td></tr>
+                        <tr><td>Descrissão: </td> <td> <textarea class="tx" cols="50" rows="4" placeholder="Descrissão do curso" name="descricaoEC"></textarea></td></tr>
+                        <tr><td>Período: </td> <td> <input type="date"> a <input type="date" name="periodoEC"></td></tr>
+                        <tr><a href="cursos.html" id="outroscursos" name="cursosExtrasEC">Adicionar Cursos</a></tr>
+                    </table>
+                </fieldset>
+
+                
+                <input type="submit" id="botao_gerar" value="Gerar PDF">
+            </form>
+        </article>
+
+        <footer id="rodape">
+            <p id="prodape"><span>Desenvolvedores:</span> Thays, Thalia, Aleks e Saulo</p>
+        </footer>
+    </body>
+</html>
